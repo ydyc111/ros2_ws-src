@@ -1,0 +1,16 @@
+usb_cam:
+  ros__parameters:
+    video_device: "/dev/video0"
+    image_width: 640
+    image_height: 480
+    framerate: 30.0
+    pixel_format: "mjpeg2rgb"
+    io_method: "mmap"
+    camera_name: "default_cam"
+    camera_frame_id: "camera_link"
+    publish_camera_info: false        # ← 关键：关掉 usb_cam 自带的 camera_info
+    brightness: 128
+    contrast: 128
+    saturation: 128
+    autoexposure: true
+    auto_white_balance: true
