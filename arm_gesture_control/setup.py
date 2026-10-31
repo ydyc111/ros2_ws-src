@@ -26,6 +26,8 @@ setup(
         'console_scripts': [
             'gesture_arm_node = arm_gesture_control.gesture_arm_node:main',
             'co_gesture_arm_node = arm_gesture_control.co_gesture_arm_node:main',
+            'custom_yolo_node = arm_gesture_control.custom_yolo_node:main',          # 新增
+            'co_custom_arm_node = arm_gesture_control.co_custom_arm_node:main',      # 新增        
         ],
     },
 )
